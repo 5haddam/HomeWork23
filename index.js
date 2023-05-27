@@ -11,7 +11,7 @@ const tuesday = [
   ['A whole lot of nothing',240]
 ];
 
-const newArray = monday.concat(tuesday)
+const TRs = monday.concat(tuesday)
   .map(function(workTask) {
     workTask[1] = workTask[1] / 60;
     return workTask;
@@ -26,4 +26,4 @@ const newArray = monday.concat(tuesday)
       <td>Task amount: $${workTask[2]}</td></tr>`;
   })
 
-document.write(`<table>${newArray.join('')}</table>`);
+document.write(`<table>${TRs.join('')}</table>`);
